@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animasyonlu Giriş ve Kayıt Sayfası</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container register">
+        <form>
+          <h1>Kayıt Ol</h1>
+
+          <input
+            type="text"
+            placeholder="Kullanıcı Adı"
+            id="username"
+            required
+          />
+          <input type="password" placeholder="Şifre" id="password" required />
+          <input
+            type="password"
+            placeholder="Şifreyi Onayla"
+            id="confirmPassword"
+            required
+          />
+
+          <button>Kayıt Ol</button>
+
+          <span>Ya da Şunlar İle Kayıt Olun</span>
+
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-facebook-square"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-container login">
+        <form>
+          <h1>Giriş Yap</h1>
+
+          <input type="text" placeholder="Kullanıcı Adı" />
+          <input type="password" placeholder="Şifre" />
+          <a href="#">Şifrenizi mi Unuttunuz?</a>
+          <button>Giriş Yap</button>
+
+          <span>Ya da Şunlar İle Giriş Yapın</span>
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-facebook-square"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+          </div>
+        </form>
+      </div>
+
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel left">
+            <h2>Hoş Geldin.</h2>
+            <p>Websitesine Giriş Yap.</p>
+            <button class="hidden" id="login">Giriş Yap</button>
+          </div>
+          <div class="toggle-panel right">
+            <h2>Websitemize Hoş Geldiniz.</h2>
+            <p>Websitesini kullanmak için kayıt olun.</p>
+            <button class="hidden" id="register">Kayıt Ol</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
